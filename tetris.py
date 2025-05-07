@@ -44,6 +44,9 @@ game_sc.place(x=20, y=20, anchor=NW)
 img_obj1 = PhotoImage(file="img/bg4.png")
 sc.create_image(0, 0, anchor=NW, image=img_obj1)
 
+img_obj2 = PhotoImage(file="img/bg44.png")
+game_sc.create_image(0, 0, anchor=NW, image=img_obj2)
+
 grid = [game_sc.create_rectangle(x * TILE, y * TILE, x * TILE + TILE, y * TILE + TILE) for x in range(W) for y in range(H)]
 figures_pos = [[(-1, 0), (-2, 0), (0, 0), (1, 0)],
                [(0, -1), (-1, -1), (-1, 0), (0, 0)],
